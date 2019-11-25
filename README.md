@@ -1,1 +1,1 @@
-# Service Discover Example
+# Service Discovery Example
