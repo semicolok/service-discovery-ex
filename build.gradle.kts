@@ -3,6 +3,7 @@ import io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension
 plugins {
     id("org.springframework.boot") version "2.1.9.RELEASE" apply false
     id("io.spring.dependency-management") version "1.0.8.RELEASE" apply false
+    id("com.google.cloud.tools.jib") version "1.8.0" apply false
 }
 
 allprojects {

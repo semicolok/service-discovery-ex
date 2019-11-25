@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: account-service
+          uri: lb://ACCOUNT-SERVICE
+          predicates:
+            - Path=/accounts/**
+          filters:
+            - StripPrefix=1
+        - id: setting-service
+          uri: lb://SETTING-SERVICE
+          predicates:
+            - Path=/settings/**
+          filters:
+            - StripPrefix=1
