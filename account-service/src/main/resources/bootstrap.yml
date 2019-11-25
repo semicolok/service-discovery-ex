@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      username: configUser
+      password: P@ssw0rd
+      discovery:
+        enabled: true
+        service-id: config-server

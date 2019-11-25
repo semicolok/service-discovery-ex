@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      username: configUser
+      password: P@ssw0rd
+      discovery:
+        enabled: true
+        service-id: config-server

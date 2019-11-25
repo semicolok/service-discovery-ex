@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: configUser
+      password: P@ssw0rd
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - classpath:/config
+            - classpath:/config/account-service
+            - classpath:/config/api-gateway
+            - classpath:/config/setting-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
