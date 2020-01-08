@@ -25,8 +25,6 @@ allprojects {
         systemProperty("file.encoding", "UTF-8")
     }
 
-    val nexusUrl: String by project
-
     repositories {
         jcenter()
     }
