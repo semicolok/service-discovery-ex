@@ -13,8 +13,9 @@ This project is sample project for "Service Discovery" with [spring cloud](https
 - [setting-service](setting-service)  
 
 ## Support Spring Active Profiles  
-- dev, local (Only for "api-gateway", "account-service" and "setting-service". "discovery-service" doesn't need profiles.)
-- native ("config-server must run whit this profile.)  
+"discovery-service" doesn't need profiles.  
+- dev, local (Only for "api-gateway", "account-service" and "setting-service".)
+- native ("config-server must run with this profile.)  
 
 ## Project execution sequence  
 1. discovery-service  
