@@ -18,5 +18,4 @@ public class HelloController {
 
         return new ResponseEntity<>(map, HttpStatus.OK);
     }
-
 }

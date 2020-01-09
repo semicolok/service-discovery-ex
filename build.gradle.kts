@@ -1,7 +1,7 @@
 import io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension
 
 plugins {
-    id("org.springframework.boot") version "2.1.9.RELEASE" apply false
+    id("org.springframework.boot") version "2.2.1.RELEASE" apply false
     id("io.spring.dependency-management") version "1.0.8.RELEASE" apply false
     id("com.google.cloud.tools.jib") version "1.8.0" apply false
 }
@@ -38,7 +38,7 @@ subprojects {
 
     configure<DependencyManagementExtension> {
         imports {
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR4")
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.RELEASE")
         }
     }
 
