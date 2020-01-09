@@ -1,2 +1,21 @@
 server:
   port: 8082
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+
+open:
+  api:
+    info:
+      title: Setting Service
+      version: v1.0
+      description: Document for Setting Service
+    servers:
+      - url: http://localhost:8082
+        description: local
+      - url: http://localhost:8080/settings
+        description: gateway

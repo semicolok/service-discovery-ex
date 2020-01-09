@@ -1,5 +1,6 @@
 plugins {
     id("com.google.cloud.tools.jib")
+    id("io.freefair.lombok") version "4.1.6"
 }
 
 jib {
@@ -13,8 +14,6 @@ jib {
 }
 
 dependencies {
-    annotationProcessor("org.projectlombok:lombok")
-
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
     implementation("org.springframework.cloud:spring-cloud-starter-config")
 
@@ -23,5 +22,5 @@ dependencies {
 
     implementation("com.google.guava:guava:28.1-jre")
 
-    implementation("org.projectlombok:lombok")
+    implementation("org.springdoc:springdoc-openapi-ui:1.2.25")
 }

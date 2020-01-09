@@ -1,5 +1,6 @@
 plugins {
     id("net.ltgt.apt") version "0.21"
+    id("net.ltgt.apt-idea") version "0.21"
     id("io.freefair.lombok") version "4.1.6"
 }
 
@@ -14,4 +15,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
 
     implementation("com.google.guava:guava:28.1-jre")
+
+    implementation("org.springdoc:springdoc-openapi-ui:1.2.25")
 }
